@@ -16,7 +16,9 @@ angular.module('transApp')
 
 	function percentage(maxval, data, css, total){
 		var nb;
-		if (total){
+		if (total === 0 && maxval === 0){
+			nb = 0
+		} else if (total){
 			nb = data*100/total;
 		} else {
 			nb = data*100/maxval;
