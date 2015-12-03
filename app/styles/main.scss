@@ -1,0 +1,206 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+.navbar {
+  background-color: #00adef;
+  border-width: 0px;
+  border-color: #FFF;
+  border-radius: 0px;
+}
+
+.navbar-header {
+  width: 100%;
+  border-width: 0px;
+}
+
+.header, .footer {
+  border-width: 0px;
+  border-radius: 0px;
+}
+
+body {
+  background-color: #111111;
+  color: #ffffff;
+  font-family: 'Source Sans Pro';
+}
+
+.navbar-brand {
+  color: #FFFFFF;
+}
+
+.team-info {
+  height: 25%;
+  min-height: 250px;
+  text-align: center;
+}
+
+img {
+  max-height: 185px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.percentage {
+  font-size: 65px;
+}
+
+.comment {
+  text-weight: 300px;
+  font-size: 2vh;
+}
+
+.bar {
+  background-color: rgba(0,173,236,0.85);
+  border: 0px solid white;
+  white-space: nowrap;
+  height: 205px;
+}
+
+.team-info-mini {
+  background-color: rgba(0,173,236,1);
+  border: 0px solid white;
+  border-radius: 6px;
+  height: 205px;
+}
+
+@media screen and (max-height: 900px) {
+
+  .bar {
+    height: 175px;
+  }
+
+  .team-info-mini {
+    height: 175px;
+  }
+
+  .team-info {
+    min-height: 200px;
+  }
+}
+
+@media screen and (max-height: 650px) {
+  .percentage {
+    font-size: 40px;
+  }
+
+  .bar {
+    height: 150px;
+  }
+
+  .team-info-mini {
+    height: 150px;
+  }
+
+  img {
+    max-height: 140px;
+  }
+
+  .team-info {
+    min-height: 160px;
+  }
+}
+
+// A supprimer si on supprime la vidéo (supprimer aussi le HTML)
+
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+  transition: 1s opacity;
+}
