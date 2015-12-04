@@ -57,7 +57,7 @@ angular.module('transApp')
 			method: 'GET',
 			url: 'http://nemopouet.s3-eu-west-1.amazonaws.com/data.json',
 		}).then(function(response){
-			var data = response.data, max= 0, min = undefined;
+			var data = response.data.groups, max= 0, min = undefined;
 			for (var i in data){
 				if (max < data[i]){
 					max = data[i];
